@@ -31,9 +31,8 @@
     margin-top: 0;
   }
   .title {
-    hyphens: auto;
     line-height: 60px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .data_row {
     flex-wrap: wrap;
@@ -54,5 +53,19 @@
   }
   article {
     width: calc(100%-60px);
+  }
+  .data_row {
+    margin-bottom: 60px;
+  }
+  footer span {
+    font-size: 15px;
+    width: 11128px;
+    animation: run infinite linear 9s;
+  }
+
+  @keyframes run {
+    to {
+      transform: translateX(-11.37%);
+    }
   }
 }

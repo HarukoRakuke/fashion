@@ -37,8 +37,7 @@ header {
   align-items: center;
 }
 .title {
-  font-size: clamp(75px, 12.5vw, 12.5vw);
-
+  font-size: clamp(50px, 12.5vw, 12.5vw);
   display: inline-block;
   margin-top: 10%;
   transition: 1s ease-in-out;
