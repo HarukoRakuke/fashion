@@ -37,7 +37,8 @@ header {
   align-items: center;
 }
 .title {
-  font-size: 12.5vw;
+  font-size: clamp(75px, 12.5vw, 12.5vw);
+
   display: inline-block;
   margin-top: 10%;
   transition: 1s ease-in-out;
@@ -60,10 +61,10 @@ header {
 .subtitle {
   grid-column-start: 3;
   text-transform: uppercase;
-  font-size: 1.3vw;
+  font-size: clamp(10px, 1.3vw, 1.3vw);
 }
 .author {
-  font-size: 1.3vw;
+  font-size: clamp(15px, 1.3vw, 1.3vw);
 }
 .author.first {
   margin-left: 22%;
@@ -89,7 +90,7 @@ nav {
 }
 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.6vw;
+  font-size: clamp(15px, 1.6vw, 1.6vw);
   color: black;
   text-transform: uppercase;
 
@@ -100,7 +101,7 @@ p + p {
 }
 .text_box span {
   font-family: 'RYM', serif;
-  font-size: 2.8vw;
+  font-size: clamp(25px, 2.8vw, 2.8vw);
   color: #1233e1;
   margin-right: 1vw;
 }
@@ -110,11 +111,15 @@ a {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   position: relative;
+  color: white;
 }
 a:hover,
 a:active,
 a:visited {
   color: white;
+}
+a:hover {
+  font-family: 'RYM', serif;
 }
 a::before {
   width: 150%;
@@ -222,7 +227,7 @@ h2 {
 }
 .info_cell span {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.6vw;
+  font-size: clamp(15px, 1.6vw, 1.6vw);
   color: #1233e1;
   text-transform: uppercase;
   margin-top: 6%;
