@@ -1,0 +1,10 @@
+@media all and (max-width: 1040px) {
+  nav {
+    display: none;
+  }
+  .text_box {
+    grid-column: span 3;
+  }
+}
+@media all and (max-width: 440px) {
+}
